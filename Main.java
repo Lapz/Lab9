@@ -37,10 +37,5 @@ public class Main {
         for (int i = 0; i <= threadCount; i += 1) {
             (new Thread(new Process(barrier, i, r.nextInt(100)))).start();
         }
-        try {
-            Thread.currentThread().join();
-        } catch (InterruptedException e) {
-
-        }
     }
 }

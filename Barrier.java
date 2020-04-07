@@ -13,7 +13,7 @@ public class Barrier {
      * Size of the barrier, which is the minimum number of processes to proceed.
      */
     private int barrierSize;
-    private static int parked = 0;
+    private static Integer parked = 0;
 
     /**
      * Create a barrier of a given size
