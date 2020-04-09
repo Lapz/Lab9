@@ -38,7 +38,7 @@ public class Process implements Runnable {
     /**
      * Get name of process.
      * 
-     * @return
+     * @returnx
      */
     public String getName() {
         return name;
@@ -50,7 +50,9 @@ public class Process implements Runnable {
      * @see java.lang.Runnable#run()
      */
     @Override
-    public void run() {
+    public void
+
+            run() {
 
         try {
 

@@ -35,8 +35,10 @@ public class Barrier {
         System.out.println(p.getName() + " waiting on barrier");
         parked += 1;
 
-        while (parked <= barrierSize) {
-            // park the threads
+        if (parked <= barrierSize) {
+            synchronized (this) {
+                wait();
+            }
         }
 
         synchronized (this) {

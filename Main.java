@@ -9,9 +9,8 @@ import java.util.Random;
  */
 public class Main {
 
-    private static final int threadCount = 20;
-    private static final int barrierSize = 10;
-    private static final int sleepTime = 500;
+    private static final int threadCount = 10;
+    private static final int barrierSize = 5;
 
     /**
      * Main program Create a barrier Create multiple instances of Process and run
